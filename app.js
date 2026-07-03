@@ -72,9 +72,8 @@ const notes = [
     status: "索引工具",
     description:
       "用 DOI 或網址快速加入待讀文獻，適合當作平日蒐集文章的第一站。",
-    tags: ["文獻管理", "待讀清單", "快速加入", "本機限定"],
-    privateId: "personal-reading-site",
-    publicUrl: "",
+    tags: ["文獻管理", "待讀清單", "快速加入"],
+    publicUrl: "https://tsn4830-ui.github.io/personal-reading-site/",
     localUrl: "../personal-reading-site/index.html",
   },
   {

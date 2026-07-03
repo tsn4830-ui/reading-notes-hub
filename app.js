@@ -151,6 +151,38 @@ const topicCount = document.querySelector("#topicCount");
 const isLocalFile = window.location.protocol === "file:";
 let activeFilter = "all";
 
+function renderActions(note) {
+  if (note.publicUrl) {
+    return `
+      <div class="links">
+        <a class="link" href="${note.publicUrl}" target="_blank" rel="noopener">開啟網站</a>
+        ${
+          note.localUrl && isLocalFile
+            ? `<a class="local-link" href="${note.localUrl}">本機版本</a>`
+            : `<span class="local-link" aria-disabled="true">${note.localUrl ? "本機限定" : "未輸出"}</span>`
+        }
+      </div>
+    `;
+  }
+
+  if (note.localUrl && isLocalFile) {
+    return `
+      <div class="private-note local-private-note">
+        <strong>私人筆記</strong>
+        <span>這份內容只在你的這台電腦可開啟。</span>
+        <a href="${note.localUrl}">本機開啟</a>
+      </div>
+    `;
+  }
+
+  return `
+    <div class="private-note">
+      <strong>私人筆記・未公開分享</strong>
+      <span>這份內容只存在作者本機，分享此索引時其他人無法開啟。</span>
+    </div>
+  `;
+}
+
 function normalize(value) {
   return value.toLowerCase().trim();
 }
@@ -201,18 +233,7 @@ function render() {
           .map((tag) => `<span class="tag${tag === "本機限定" ? " tag-private" : ""}">${tag}</span>`)
           .join("")}
       </div>
-      <div class="links">
-        ${
-          note.publicUrl
-            ? `<a class="link" href="${note.publicUrl}" target="_blank" rel="noopener">開啟網站</a>`
-            : `<span class="local-link private-link" aria-disabled="true">不公開</span>`
-        }
-        ${
-          note.localUrl && isLocalFile
-            ? `<a class="local-link" href="${note.localUrl}">本機版本</a>`
-            : `<span class="local-link" aria-disabled="true">${note.localUrl ? "本機限定" : "未輸出"}</span>`
-        }
-      </div>
+      ${renderActions(note)}
     `;
     cards.append(article);
   });

@@ -94,8 +94,8 @@ const notes = [
     status: "臨床手冊",
     description:
       "整合抗生素、心衰竭、高血壓、血脂、抗血小板、電解質、內分泌急症等臨床速查內容。",
-    tags: ["內科", "速查", "住院醫療", "本機限定"],
-    publicUrl: "",
+    tags: ["內科", "速查", "住院醫療"],
+    publicUrl: "https://tsn4830-ui.github.io/2026-im-pocket/",
     localUrl: "../火星渦蟲-2026/site-repo/index.html",
   },
   {

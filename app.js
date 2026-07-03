@@ -99,17 +99,6 @@ const notes = [
     localUrl: "../火星渦蟲-2026/site-repo/index.html",
   },
   {
-    title: "IRB in a Hurry",
-    category: "methods",
-    accent: "gold",
-    status: "研究工具",
-    description:
-      "研究計畫與 IRB 文件產生工具，協助依研究型態選擇表單與整理送審材料。",
-    tags: ["IRB", "研究計畫", "文件產生"],
-    publicUrl: "https://htlin222.github.io/irb-in-hurry/",
-    localUrl: "",
-  },
-  {
     title: "論文學習雷達",
     category: "tools",
     accent: "blue",

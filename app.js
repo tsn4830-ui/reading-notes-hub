@@ -82,10 +82,10 @@ const notes = [
     accent: "cranberry",
     status: "教科書筆記",
     description:
-      "Williams Textbook of Endocrinology 第 15 版繁體中文讀書筆記，依章節整理內分泌重點。",
-    tags: ["內分泌", "教科書", "Williams", "本機限定"],
+      "Williams Textbook of Endocrinology 第 15 版繁體中文讀書筆記，離線含圖單檔完整版，依章節整理內分泌重點。",
+    tags: ["內分泌", "教科書", "Williams", "離線含圖", "本機限定"],
     publicUrl: "",
-    localUrl: "../williams-endo-web/dist/index.html",
+    localUrl: "../../Dropbox/William2025/Williams內分泌學15e_離線_含圖.html",
   },
   {
     title: "心血管代謝多重長期病況",

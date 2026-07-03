@@ -197,7 +197,9 @@ function render() {
       <p>${note.description}</p>
       <div class="tags">
         <span class="tag">${categoryLabels[note.category]}</span>
-        ${note.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}
+        ${note.tags
+          .map((tag) => `<span class="tag${tag === "本機限定" ? " tag-private" : ""}">${tag}</span>`)
+          .join("")}
       </div>
       <div class="links">
         ${

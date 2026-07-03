@@ -1,16 +1,5 @@
 const notes = [
   {
-    title: "個人讀書小站",
-    category: "tools",
-    accent: "sage",
-    status: "索引工具",
-    description:
-      "用 DOI 或網址快速加入待讀文獻，適合當作平日蒐集文章的第一站。",
-    tags: ["文獻管理", "待讀清單", "快速加入", "本機限定"],
-    publicUrl: "",
-    localUrl: "../personal-reading-site/index.html",
-  },
-  {
     title: "阿婷醫師的讀書筆記",
     category: "tools",
     accent: "teal",
@@ -20,17 +9,6 @@ const notes = [
     tags: ["每日文獻", "老人醫學", "骨質疏鬆", "內分泌"],
     publicUrl: "https://tsn4830-ui.github.io/drartin-reading-notes/",
     localUrl: "../reading-radar/site/index.html",
-  },
-  {
-    title: "Williams 內分泌學 15e 讀書筆記",
-    category: "endo",
-    accent: "cranberry",
-    status: "教科書筆記",
-    description:
-      "Williams Textbook of Endocrinology 第 15 版繁體中文讀書筆記，依章節整理內分泌重點。",
-    tags: ["內分泌", "教科書", "Williams", "本機限定"],
-    publicUrl: "",
-    localUrl: "../williams-endo-web/dist/index.html",
   },
   {
     title: "糖尿病患者骨質疏鬆照護共識",
@@ -77,17 +55,6 @@ const notes = [
     localUrl: "../ckm_2026_guideline_ppt/site/index.html",
   },
   {
-    title: "心血管代謝多重長期病況",
-    category: "cardio",
-    accent: "sage",
-    status: "報告投影片",
-    description:
-      "根據 The Lancet 2026 cardiometabolic MLTC 系列整理的繁體中文醫學報告投影片。",
-    tags: ["心血管代謝", "MLTC", "The Lancet", "本機限定"],
-    publicUrl: "",
-    localUrl: "../cardiometabolic-mltc-report/site/index.html",
-  },
-  {
     title: "2026 內科小手冊",
     category: "guideline",
     accent: "blue",
@@ -97,6 +64,39 @@ const notes = [
     tags: ["內科", "速查", "住院醫療"],
     publicUrl: "https://tsn4830-ui.github.io/2026-im-pocket/",
     localUrl: "../火星渦蟲-2026/site-repo/index.html",
+  },
+  {
+    title: "個人讀書小站",
+    category: "tools",
+    accent: "sage",
+    status: "索引工具",
+    description:
+      "用 DOI 或網址快速加入待讀文獻，適合當作平日蒐集文章的第一站。",
+    tags: ["文獻管理", "待讀清單", "快速加入", "本機限定"],
+    publicUrl: "",
+    localUrl: "../personal-reading-site/index.html",
+  },
+  {
+    title: "Williams 內分泌學 15e 讀書筆記",
+    category: "endo",
+    accent: "cranberry",
+    status: "教科書筆記",
+    description:
+      "Williams Textbook of Endocrinology 第 15 版繁體中文讀書筆記，依章節整理內分泌重點。",
+    tags: ["內分泌", "教科書", "Williams", "本機限定"],
+    publicUrl: "",
+    localUrl: "../williams-endo-web/dist/index.html",
+  },
+  {
+    title: "心血管代謝多重長期病況",
+    category: "cardio",
+    accent: "sage",
+    status: "報告投影片",
+    description:
+      "根據 The Lancet 2026 cardiometabolic MLTC 系列整理的繁體中文醫學報告投影片。",
+    tags: ["心血管代謝", "MLTC", "The Lancet", "本機限定"],
+    publicUrl: "",
+    localUrl: "../cardiometabolic-mltc-report/site/index.html",
   },
 ];
 

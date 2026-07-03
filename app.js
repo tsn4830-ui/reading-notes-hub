@@ -73,6 +73,7 @@ const notes = [
     description:
       "用 DOI 或網址快速加入待讀文獻，適合當作平日蒐集文章的第一站。",
     tags: ["文獻管理", "待讀清單", "快速加入", "本機限定"],
+    privateId: "personal-reading-site",
     publicUrl: "",
     localUrl: "../personal-reading-site/index.html",
   },
@@ -96,6 +97,7 @@ const notes = [
     description:
       "根據 The Lancet 2026 cardiometabolic MLTC 系列整理的繁體中文醫學報告投影片。",
     tags: ["心血管代謝", "MLTC", "The Lancet", "本機限定"],
+    privateId: "cardiometabolic-mltc",
     publicUrl: "",
     localUrl: "../cardiometabolic-mltc-report/site/index.html",
   },

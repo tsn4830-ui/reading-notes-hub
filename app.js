@@ -154,13 +154,8 @@ let activeFilter = "all";
 function renderActions(note) {
   if (note.publicUrl) {
     return `
-      <div class="links">
+      <div class="links public-links">
         <a class="link" href="${note.publicUrl}" target="_blank" rel="noopener">開啟網站</a>
-        ${
-          note.localUrl && isLocalFile
-            ? `<a class="local-link" href="${note.localUrl}">本機版本</a>`
-            : `<span class="local-link" aria-disabled="true">${note.localUrl ? "本機限定" : "未輸出"}</span>`
-        }
       </div>
     `;
   }

@@ -84,6 +84,7 @@ const notes = [
     description:
       "Williams Textbook of Endocrinology 第 15 版繁體中文讀書筆記，離線含圖單檔完整版，依章節整理內分泌重點。",
     tags: ["內分泌", "教科書", "Williams", "離線含圖", "本機限定"],
+    privateId: "williams-endo-offline",
     publicUrl: "",
     localUrl: "../../Dropbox/William2025/Williams內分泌學15e_離線_含圖.html",
   },
@@ -118,6 +119,20 @@ const topicCount = document.querySelector("#topicCount");
 const isLocalFile = window.location.protocol === "file:";
 let activeFilter = "all";
 
+function privateLinkKey(note) {
+  return note.privateId ? `privateLink:${note.privateId}` : null;
+}
+
+function getPrivateLink(note) {
+  const key = privateLinkKey(note);
+  if (!key) return "";
+  try {
+    return localStorage.getItem(key) || "";
+  } catch (err) {
+    return "";
+  }
+}
+
 function renderActions(note) {
   if (note.publicUrl) {
     return `
@@ -133,6 +148,31 @@ function renderActions(note) {
         <strong>私人筆記</strong>
         <span>這份內容只在你的這台電腦可開啟。</span>
         <a href="${note.localUrl}">本機開啟</a>
+      </div>
+    `;
+  }
+
+  const deviceLink = getPrivateLink(note);
+  if (deviceLink) {
+    return `
+      <div class="private-note device-private-note">
+        <strong>本裝置私人連結</strong>
+        <span>這條連結只存在你這台裝置的瀏覽器，別人看不到。</span>
+        <a href="${deviceLink}" target="_blank" rel="noopener">開啟</a>
+        <div class="device-link-actions">
+          <button type="button" class="link-manage" data-action="set-private" data-id="${note.privateId}">更新連結</button>
+          <button type="button" class="link-manage" data-action="clear-private" data-id="${note.privateId}">清除</button>
+        </div>
+      </div>
+    `;
+  }
+
+  if (note.privateId) {
+    return `
+      <div class="private-note">
+        <strong>私人筆記・未公開分享</strong>
+        <span>可在你自己的裝置上綁定一條只有本機看得到的連結。</span>
+        <button type="button" class="link-manage" data-action="set-private" data-id="${note.privateId}">在本裝置設定私人連結</button>
       </div>
     `;
   }
@@ -210,6 +250,49 @@ filters.forEach((button) => {
     filters.forEach((filter) => filter.classList.toggle("active", filter === button));
     render();
   });
+});
+
+cards.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-action]");
+  if (!button) return;
+  const id = button.dataset.id;
+  if (!id) return;
+  const key = `privateLink:${id}`;
+
+  if (button.dataset.action === "set-private") {
+    const current = (() => {
+      try {
+        return localStorage.getItem(key) || "";
+      } catch (err) {
+        return "";
+      }
+    })();
+    const input = window.prompt(
+      "貼上只給這台裝置用的連結（例如你的 Dropbox 分享連結）。留空按確定則清除。",
+      current,
+    );
+    if (input === null) return;
+    const value = input.trim();
+    try {
+      if (value) {
+        localStorage.setItem(key, value);
+      } else {
+        localStorage.removeItem(key);
+      }
+    } catch (err) {
+      window.alert("這個瀏覽器不允許儲存，可能是無痕模式。");
+    }
+    render();
+  }
+
+  if (button.dataset.action === "clear-private") {
+    try {
+      localStorage.removeItem(key);
+    } catch (err) {
+      /* ignore */
+    }
+    render();
+  }
 });
 
 searchInput.addEventListener("input", render);

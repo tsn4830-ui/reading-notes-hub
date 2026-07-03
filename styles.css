@@ -485,6 +485,44 @@ button {
   background: #fff7ed;
 }
 
+.device-private-note {
+  border-color: #bfe3d4;
+  border-left-color: var(--teal, #2f8f7f);
+  background: #f0faf6;
+  color: #1f4d43;
+}
+
+.device-private-note strong {
+  color: #1a463d;
+}
+
+.device-private-note span {
+  color: #2f6357;
+}
+
+.device-link-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.link-manage {
+  margin-top: 4px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--purple-dark);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link-manage:hover {
+  opacity: 0.75;
+}
+
 [aria-disabled="true"] {
   cursor: default;
 }

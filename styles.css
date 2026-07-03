@@ -361,6 +361,12 @@ button {
   color: var(--ink);
 }
 
+.private-link {
+  border-color: #dec5ca;
+  background: #fbf0f2;
+  color: #853346;
+}
+
 .workflow {
   margin-bottom: 70px;
   padding: 34px;

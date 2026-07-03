@@ -83,7 +83,7 @@ const notes = [
     status: "報告投影片",
     description:
       "根據 The Lancet 2026 cardiometabolic MLTC 系列整理的繁體中文醫學報告投影片。",
-    tags: ["心血管代謝", "MLTC", "The Lancet"],
+    tags: ["心血管代謝", "MLTC", "The Lancet", "本機限定"],
     publicUrl: "",
     localUrl: "../cardiometabolic-mltc-report/site/index.html",
   },
@@ -94,7 +94,7 @@ const notes = [
     status: "臨床手冊",
     description:
       "整合抗生素、心衰竭、高血壓、血脂、抗血小板、電解質、內分泌急症等臨床速查內容。",
-    tags: ["內科", "速查", "住院醫療"],
+    tags: ["內科", "速查", "住院醫療", "本機限定"],
     publicUrl: "",
     localUrl: "../火星渦蟲-2026/site-repo/index.html",
   },
@@ -203,7 +203,7 @@ function render() {
         ${
           note.publicUrl
             ? `<a class="link" href="${note.publicUrl}" target="_blank" rel="noopener">開啟網站</a>`
-            : `<span class="local-link" aria-disabled="true">待發布</span>`
+            : `<span class="local-link private-link" aria-disabled="true">不公開</span>`
         }
         ${
           note.localUrl && isLocalFile

@@ -99,17 +99,6 @@ const notes = [
     localUrl: "../火星渦蟲-2026/site-repo/index.html",
   },
   {
-    title: "Learn R with AI",
-    category: "methods",
-    accent: "teal",
-    status: "學習書",
-    description:
-      "用 AI 輔助學習 R 的線上書籍，適合研究、資料整理與重現性分析入門。",
-    tags: ["R", "AI", "資料分析"],
-    publicUrl: "https://htlin222.github.io/learn-r-with-ai/",
-    localUrl: "",
-  },
-  {
     title: "IRB in a Hurry",
     category: "methods",
     accent: "gold",

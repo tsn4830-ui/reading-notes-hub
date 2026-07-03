@@ -290,8 +290,7 @@ button {
   color: var(--purple-dark);
 }
 
-.library,
-.workflow {
+.library {
   width: min(1200px, calc(100% - 32px));
   margin: 0 auto;
 }
@@ -490,27 +489,6 @@ button {
   cursor: default;
 }
 
-.workflow {
-  margin-bottom: 48px;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 28px;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  background: var(--panel);
-}
-
-.workflow ol {
-  margin: 0;
-  padding-left: 22px;
-  color: var(--muted);
-}
-
-.workflow li + li {
-  margin-top: 8px;
-}
-
 code {
   padding: 2px 5px;
   border-radius: 4px;
@@ -540,8 +518,7 @@ footer p {
 }
 
 @media (max-width: 900px) {
-  .hero,
-  .workflow {
+  .hero {
     grid-template-columns: 1fr;
   }
 
@@ -578,7 +555,6 @@ footer p {
   }
 
   .library,
-  .workflow,
   .toolbar-inner {
     width: min(100% - 24px, 1200px);
   }

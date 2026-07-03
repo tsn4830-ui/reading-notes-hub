@@ -98,17 +98,6 @@ const notes = [
     publicUrl: "https://tsn4830-ui.github.io/2026-im-pocket/",
     localUrl: "../火星渦蟲-2026/site-repo/index.html",
   },
-  {
-    title: "論文學習雷達",
-    category: "tools",
-    accent: "blue",
-    status: "原型工具",
-    description:
-      "私密自架版文獻雷達原型，包含主題開關、篩選、動作鈕與全文徽章。",
-    tags: ["paper radar", "文獻篩選", "原型"],
-    publicUrl: "https://github.com/drpwchen/paper-radar",
-    localUrl: "../paper-radar/site/index.html",
-  },
 ];
 
 const categoryLabels = {

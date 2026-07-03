@@ -6,8 +6,8 @@ const notes = [
     status: "索引工具",
     description:
       "用 DOI 或網址快速加入待讀文獻，適合當作平日蒐集文章的第一站。",
-    tags: ["文獻管理", "待讀清單", "快速加入"],
-    publicUrl: "https://tsn4830-ui.github.io/personal-reading-site/",
+    tags: ["文獻管理", "待讀清單", "快速加入", "本機限定"],
+    publicUrl: "",
     localUrl: "../personal-reading-site/index.html",
   },
   {
@@ -28,8 +28,8 @@ const notes = [
     status: "教科書筆記",
     description:
       "Williams Textbook of Endocrinology 第 15 版繁體中文讀書筆記，依章節整理內分泌重點。",
-    tags: ["內分泌", "教科書", "Williams"],
-    publicUrl: "https://tsn4830-ui.github.io/williams-endocrinology-15e-notes/",
+    tags: ["內分泌", "教科書", "Williams", "本機限定"],
+    publicUrl: "",
     localUrl: "../williams-endo-web/dist/index.html",
   },
   {

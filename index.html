@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>阿婷醫師的讀書筆記總覽</title>
+    <meta
+      name="description"
+      content="整合阿婷醫師做過的醫學指南、讀書筆記、投影片網站與文獻雷達。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="主選單">
+        <a class="brand" href="#top" aria-label="回到首頁">Reading Notes Hub</a>
+        <div class="nav-actions">
+          <a href="#library">筆記庫</a>
+          <a href="#workflow">整理流程</a>
+        </div>
+      </nav>
+
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Personal medical reading shelf</p>
+          <h1>阿婷醫師的讀書筆記總覽</h1>
+          <p class="lede">
+            把已完成的指南摘要、投影片網站、文獻雷達和學習工具集中成一個入口。
+            門診前快速複習、備課時找來源、或把新筆記補進來，都從這裡開始。
+          </p>
+          <div class="hero-metrics" aria-label="筆記統計">
+            <span><strong id="totalCount">0</strong> 個網站</span>
+            <span><strong id="topicCount">0</strong> 個分類</span>
+            <span><strong>1</strong> 個入口</span>
+          </div>
+        </div>
+        <form class="search-panel" role="search" aria-label="搜尋讀書筆記">
+          <label for="searchInput">搜尋</label>
+          <div class="search-row">
+            <input
+              id="searchInput"
+              type="search"
+              autocomplete="off"
+              placeholder="輸入 CKM、骨鬆、心衰竭、R..."
+            />
+            <button type="button" id="clearSearch" aria-label="清除搜尋">清除</button>
+          </div>
+          <p id="resultSummary" aria-live="polite">正在整理筆記。</p>
+        </form>
+      </section>
+    </header>
+
+    <main>
+      <section class="toolbar" aria-label="分類篩選">
+        <div class="toolbar-inner">
+          <button class="filter active" type="button" data-filter="all">全部</button>
+          <button class="filter" type="button" data-filter="guideline">指南筆記</button>
+          <button class="filter" type="button" data-filter="endo">內分泌代謝</button>
+          <button class="filter" type="button" data-filter="cardio">心腎代謝</button>
+          <button class="filter" type="button" data-filter="tools">工具與雷達</button>
+          <button class="filter" type="button" data-filter="methods">方法學</button>
+        </div>
+      </section>
+
+      <section class="library" id="library" aria-labelledby="libraryTitle">
+        <div class="section-heading">
+          <p class="eyebrow">Library</p>
+          <h2 id="libraryTitle">已整理的網站</h2>
+        </div>
+        <div class="cards" id="cards"></div>
+      </section>
+
+      <section class="workflow" id="workflow" aria-labelledby="workflowTitle">
+        <div>
+          <p class="eyebrow">Maintenance</p>
+          <h2 id="workflowTitle">新增筆記時怎麼放進來</h2>
+        </div>
+        <ol>
+          <li>確認新網站的公開網址，或先放本機相對路徑。</li>
+          <li>在 <code>app.js</code> 的 <code>notes</code> 陣列新增一筆資料。</li>
+          <li>填入分類、標籤、狀態與摘要，首頁會自動進入搜尋與篩選。</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p>更新日：2026-07-03。內容供個人讀書整理與教學複習使用。</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

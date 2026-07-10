@@ -66,6 +66,17 @@ const notes = [
     localUrl: "../火星渦蟲-2026/site-repo/index.html",
   },
   {
+    title: "內科疾病臨床指引索引",
+    category: "guideline",
+    accent: "teal",
+    status: "指引索引",
+    description:
+      "依內科次專科與疾病分類，彙整 NEJM、Lancet、JAMA、BMJ、Diabetes Care、KDIGO、ATA 等臨床指引與免費全文。",
+    tags: ["內科", "臨床指引", "期刊", "免費全文"],
+    publicUrl: "https://tsn4830-ui.github.io/im-guideline-index/",
+    localUrl: "",
+  },
+  {
     title: "個人讀書小站",
     category: "tools",
     accent: "sage",
@@ -85,6 +96,7 @@ const notes = [
       "Williams Textbook of Endocrinology 第 15 版繁體中文讀書筆記，離線含圖單檔完整版，依章節整理內分泌重點。",
     tags: ["內分泌", "教科書", "Williams", "離線含圖", "本機限定"],
     privateId: "williams-endo-offline",
+    privateUrl: "https://private-reading-notes-site.pages.dev/sites/williams-endo/index.html",
     publicUrl: "",
     localUrl: "../../Dropbox/William2025/Williams內分泌學15e_離線_含圖.html",
   },
@@ -97,6 +109,7 @@ const notes = [
       "根據 The Lancet 2026 cardiometabolic MLTC 系列整理的繁體中文醫學報告投影片。",
     tags: ["心血管代謝", "MLTC", "The Lancet", "本機限定"],
     privateId: "cardiometabolic-mltc",
+    privateUrl: "https://private-reading-notes-site.pages.dev/sites/cardiometabolic-mltc/index.html",
     publicUrl: "",
     localUrl: "../cardiometabolic-mltc-report/site/index.html",
   },
@@ -149,6 +162,16 @@ function renderActions(note) {
         <strong>私人筆記</strong>
         <span>這份內容只在你的這台電腦可開啟。</span>
         <a href="${note.localUrl}">本機開啟</a>
+      </div>
+    `;
+  }
+
+  if (note.privateUrl) {
+    return `
+      <div class="private-note device-private-note">
+        <strong>私人網站・需帳密</strong>
+        <span>這份筆記已放在 Cloudflare 私密站，開啟後請輸入私人帳號密碼。</span>
+        <a href="${note.privateUrl}" target="_blank" rel="noopener">開啟私人網站</a>
       </div>
     `;
   }

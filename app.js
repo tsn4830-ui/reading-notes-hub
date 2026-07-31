@@ -124,6 +124,19 @@ const notes = [
     publicUrl: "",
     localUrl: "../cardiometabolic-mltc-report/site/index.html",
   },
+  {
+    title: "阿婷醫師的訓練科學筆記",
+    category: "training",
+    accent: "sage",
+    status: "實證學習站",
+    description:
+      "訓練科學實證學習站：14 章主題、32 支精選影片、43 篇文獻，附學習紀錄與文獻雷達。非營利、不公開索引。",
+    tags: ["訓練科學", "肌力訓練", "實證", "私訊索取"],
+    privateId: "training-science-notes",
+    privateNote: "網站不公開連結，有需要的朋友請私訊阿婷醫師索取。",
+    publicUrl: "",
+    localUrl: "",
+  },
 ];
 
 const categoryLabels = {
@@ -132,6 +145,7 @@ const categoryLabels = {
   cardio: "心腎代謝",
   tools: "工具與雷達",
   methods: "方法學",
+  training: "運動科學",
 };
 
 const cards = document.querySelector("#cards");
@@ -206,7 +220,7 @@ function renderActions(note) {
     return `
       <div class="private-note">
         <strong>私人筆記・未公開分享</strong>
-        <span>可在你自己的裝置上綁定一條只有本機看得到的連結。</span>
+        <span>${note.privateNote || "可在你自己的裝置上綁定一條只有本機看得到的連結。"}</span>
         <button type="button" class="link-manage" data-action="set-private" data-id="${note.privateId}">在本裝置設定私人連結</button>
       </div>
     `;
@@ -215,7 +229,7 @@ function renderActions(note) {
   return `
     <div class="private-note">
       <strong>私人筆記・未公開分享</strong>
-      <span>這份內容只存在作者本機，分享此索引時其他人無法開啟。</span>
+      <span>${note.privateNote || "這份內容只存在作者本機，分享此索引時其他人無法開啟。"}</span>
     </div>
   `;
 }
@@ -267,7 +281,7 @@ function render() {
       <div class="tags">
         <span class="tag">${categoryLabels[note.category]}</span>
         ${note.tags
-          .map((tag) => `<span class="tag${tag === "本機限定" ? " tag-private" : ""}">${tag}</span>`)
+          .map((tag) => `<span class="tag${["本機限定", "私訊索取"].includes(tag) ? " tag-private" : ""}">${tag}</span>`)
           .join("")}
       </div>
       ${renderActions(note)}

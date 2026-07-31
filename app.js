@@ -55,6 +55,17 @@ const notes = [
     localUrl: "../ckm_2026_guideline_ppt/site/index.html",
   },
   {
+    title: "CKM Compass 風險決策工具",
+    category: "cardio",
+    accent: "gold",
+    status: "互動工具",
+    description:
+      "整合 2026 AHA/ACC CKM 指引與 PREVENT 風險計算器：CKM 分期、CAC 與生物標記風險重分類、分期別治療建議。",
+    tags: ["CKM", "PREVENT", "風險計算", "心腎代謝"],
+    publicUrl: "https://ckm-compass-2026.richtin.chatgpt.site",
+    localUrl: "",
+  },
+  {
     title: "2026 內科小手冊",
     category: "guideline",
     accent: "blue",

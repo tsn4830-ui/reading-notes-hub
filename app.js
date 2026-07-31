@@ -99,6 +99,17 @@ const notes = [
     localUrl: "../personal-reading-site/index.html",
   },
   {
+    title: "疼痛評估工具",
+    category: "tools",
+    accent: "blue",
+    status: "床邊工具",
+    description:
+      "PQRST 架構的疼痛評估：NRS 0–10 評分、處置後快速重評、自動算疼痛下降幅度與功能影響，可一鍵產生摘要。",
+    tags: ["疼痛", "PQRST", "NRS", "床邊評估"],
+    publicUrl: "https://pain-assessment-tool.richtin.chatgpt.site/",
+    localUrl: "",
+  },
+  {
     title: "Williams 內分泌學 15e 讀書筆記",
     category: "endo",
     accent: "cranberry",

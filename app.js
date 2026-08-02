@@ -118,7 +118,8 @@ const notes = [
       "Williams Textbook of Endocrinology 第 15 版繁體中文讀書筆記，離線含圖單檔完整版，依章節整理內分泌重點。",
     tags: ["內分泌", "教科書", "Williams", "離線含圖", "本機限定"],
     privateId: "williams-endo-offline",
-    privateUrl: "https://private-reading-notes-site.pages.dev/sites/williams-endo/index.html",
+    privateNote: "此站不公開索引，開啟後需輸入密碼。",
+    privateUrl: "https://williams.drtsengshihting.com/",
     publicUrl: "",
     localUrl: "../../Dropbox/William2025/Williams內分泌學15e_離線_含圖.html",
   },
@@ -129,10 +130,8 @@ const notes = [
     status: "報告投影片",
     description:
       "根據 The Lancet 2026 cardiometabolic MLTC 系列整理的繁體中文醫學報告投影片。",
-    tags: ["心血管代謝", "MLTC", "The Lancet", "本機限定"],
-    privateId: "cardiometabolic-mltc",
-    privateUrl: "https://private-reading-notes-site.pages.dev/sites/cardiometabolic-mltc/index.html",
-    publicUrl: "",
+    tags: ["心血管代謝", "MLTC", "The Lancet"],
+    publicUrl: "https://tsn4830-ui.github.io/cardiometabolic-mltc-lancet-2026/",
     localUrl: "../cardiometabolic-mltc-report/site/index.html",
   },
   {
@@ -219,8 +218,10 @@ const notes = [
     status: "門診工具",
     description:
       "體重與代謝評估門診用的線上評估工具，協助整理病史、代謝風險與後續處置方向。",
-    tags: ["體重", "代謝評估", "門診工具"],
-    publicUrl: "https://weight-clinic.vercel.app/",
+    tags: ["體重", "代謝評估", "門診工具", "私訊索取"],
+    privateId: "metabolic-assess-tool",
+    privateNote: "門診內部使用，未公開分享；有需要的朋友請私訊阿婷醫師。",
+    publicUrl: "",
     localUrl: "",
   },
   {

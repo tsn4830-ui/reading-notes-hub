@@ -245,6 +245,7 @@ const notes = [
     status: "教科書筆記",
     description:
       "Principles of Endocrinology 的個人讀書筆記投影片站。",
+    note: "附註：不含原書圖表，須自行參照；教科書 PDF 可上 ClinicalKey 下載。",
     tags: ["內分泌", "教科書", "投影片"],
     privateNote: "此站不公開索引，開啟後需輸入帳號密碼。",
     privateUrl: "https://principles-endocrinology-ating-notes.pages.dev/",

@@ -136,6 +136,20 @@ const notes = [
     localUrl: "../cardiometabolic-mltc-report/site/index.html",
   },
   {
+    title: "新陳代謝科專科訓練教學計畫",
+    category: "endoteach",
+    accent: "teal",
+    status: "訓練計畫",
+    description:
+      "兩年制專科訓練的能力導向（CBME）教學計畫：訓練手冊、六種評量表單、核心技能對照表與學習護照追蹤。",
+    note: "附註：根據教科書整理，純文字版本，沒有圖片、沒有影片。",
+    tags: ["內分泌", "專科訓練", "CBME", "科內教學"],
+    privateNote: "此站僅供科內教學使用，未對外公開，開啟後需輸入密碼。",
+    privateUrl: "https://endo.drtsengshihting.com/",
+    publicUrl: "",
+    localUrl: "",
+  },
+  {
     title: "內分泌代謝實證教室",
     category: "endoteach",
     accent: "gold",
@@ -220,7 +234,7 @@ function renderActions(note) {
     return `
       <div class="private-note device-private-note">
         <strong>私人網站・需帳密</strong>
-        <span>這份筆記已放在 Cloudflare 私密站，開啟後請輸入私人帳號密碼。</span>
+        <span>${note.privateNote || "這份筆記已放在 Cloudflare 私密站，開啟後請輸入私人帳號密碼。"}</span>
         <a href="${note.privateUrl}" target="_blank" rel="noopener">開啟私人網站</a>
       </div>
     `;
@@ -268,6 +282,7 @@ function noteMatches(note, query) {
   const haystack = [
     note.title,
     note.description,
+    note.note || "",
     note.status,
     categoryLabels[note.category],
     ...note.tags,
@@ -303,6 +318,7 @@ function render() {
         <span class="status">${note.status}</span>
       </div>
       <p>${note.description}</p>
+      ${note.note ? `<p class="card-note">${note.note}</p>` : ""}
       <div class="tags">
         <span class="tag">${categoryLabels[note.category]}</span>
         ${note.tags

@@ -384,6 +384,13 @@ button {
   font-size: 0.94rem;
 }
 
+.card p.card-note {
+  margin-top: -6px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  opacity: 0.85;
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;

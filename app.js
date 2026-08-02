@@ -307,7 +307,7 @@ const notes = [
 ];
 
 const categoryLabels = {
-  guideline: "指南筆記",
+  guideline: "大內科",
   endo: "內分泌代謝",
   endoteach: "內分泌教學",
   cardio: "心腎代謝",

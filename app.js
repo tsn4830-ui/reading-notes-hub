@@ -136,6 +136,19 @@ const notes = [
     localUrl: "../cardiometabolic-mltc-report/site/index.html",
   },
   {
+    title: "內分泌代謝實證教室",
+    category: "endoteach",
+    accent: "gold",
+    status: "實證教材",
+    description:
+      "給內科／新陳代謝科住院醫師的 14 章內分泌實證教材：45 支已驗證影片、79 篇附 DOI 文獻，每章含臨床轉譯、常見誤區與反證，附學習紀錄同步。",
+    tags: ["內分泌", "住院醫師", "實證教材", "私訊索取"],
+    privateId: "endo-evidence-course",
+    privateNote: "網站不公開索引，有需要的朋友請私訊阿婷醫師索取。",
+    publicUrl: "",
+    localUrl: "",
+  },
+  {
     title: "阿婷醫師的訓練科學筆記",
     category: "training",
     accent: "sage",
@@ -153,6 +166,7 @@ const notes = [
 const categoryLabels = {
   guideline: "指南筆記",
   endo: "內分泌代謝",
+  endoteach: "內分泌教學",
   cardio: "心腎代謝",
   tools: "工具與雷達",
   methods: "方法學",

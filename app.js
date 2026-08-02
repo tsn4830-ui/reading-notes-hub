@@ -281,6 +281,17 @@ const notes = [
     localUrl: "",
   },
   {
+    title: "iPhone 光影學堂",
+    category: "life",
+    accent: "cranberry",
+    status: "自學課程",
+    description:
+      "iPhone 手機攝影自學站：從相機設定、用光構圖、動態拍攝到建立影像風格四章十堂課，精選教學影片並附每堂的拍攝練習任務。",
+    tags: ["攝影", "iPhone", "自學課程"],
+    publicUrl: "https://iphone-photo-academy.richtin.chatgpt.site/",
+    localUrl: "",
+  },
+  {
     title: "阿婷醫師的訓練科學筆記",
     category: "training",
     accent: "sage",
@@ -304,6 +315,7 @@ const categoryLabels = {
   tools: "工具與雷達",
   methods: "方法學",
   training: "運動科學",
+  life: "生活與興趣",
 };
 
 const cards = document.querySelector("#cards");

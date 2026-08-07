@@ -213,7 +213,7 @@ const notes = [
   },
   {
     title: "衡日 BalanceDays",
-    category: "tools",
+    category: "edu",
     accent: "teal",
     status: "追蹤工具",
     description:

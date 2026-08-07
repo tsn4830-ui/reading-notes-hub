@@ -217,9 +217,9 @@ const notes = [
     accent: "teal",
     status: "追蹤工具",
     description:
-      "療程、營養與生活的自我追蹤工具：記錄療程、飲食、喝水、症狀、體重、運動、睡眠與心情，跨裝置同步並可匯出完整健康紀錄。",
+      "維持健康體態與減重的日常小幫手：記錄療程、飲食、喝水、症狀、體重、運動、睡眠與心情，跨裝置同步並可匯出完整健康紀錄。",
     note: "附註：需登入後使用。",
-    tags: ["自我追蹤", "體重", "生活紀錄", "跨裝置同步"],
+    tags: ["減重", "體重管理", "健康體態", "自我追蹤"],
     publicUrl: "https://balancedose-glp1-tw.richtin.chatgpt.site/",
     localUrl: "",
   },
@@ -325,7 +325,7 @@ const notes = [
       "衛福部公告的 110–114 年度專科護理師甄審筆試試題：專科護理通論與進階專科護理（內科）兩科共 800 題，全題附解析（判斷關鍵、逐選項對錯、陷阱、依據來源），另有模擬測驗、錯題本、每題筆記與跨裝置同步。",
     tags: ["專科護理師", "考古題", "內科", "解析", "模擬測驗", "筆記同步"],
     note: "附註：題目與標準答案逐字取自衛福部官方 PDF；解析由 AI 依實證來源整理、引用逐條驗證過，尚未逐題人工審閱。",
-    publicUrl: "https://np-exam-prep.pages.dev/",
+    publicUrl: "https://np.drtsengshihting.com/",
     localUrl: "../np-exam-prep/index.html",
   },
 ];

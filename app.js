@@ -22,6 +22,18 @@ const notes = [
     localUrl: "../dm-osteoporosis-slides/index.html",
   },
   {
+    title: "GDM 管理照護臨床路徑",
+    category: "endo",
+    accent: "cranberry",
+    status: "臨床路徑",
+    description:
+      "妊娠糖尿病從診斷轉介、孕期四站追蹤、生產評估到產後 OGTT 結案的互動式照護導航，附逐站核對、血糖目標與申報提示。",
+    note: "附註：目前需以原建立者帳號登入瀏覽。",
+    tags: ["妊娠糖尿病", "GDM", "臨床路徑", "健保申報"],
+    publicUrl: "https://gdm-care-pathway.richtin.chatgpt.site/",
+    localUrl: "",
+  },
+  {
     title: "高齡心衰竭照護最佳化",
     category: "cardio",
     accent: "blue",
@@ -329,6 +341,8 @@ const notes = [
     localUrl: "../np-exam-prep/index.html",
   },
 ];
+
+notes.sort((a, b) => Number(Boolean(b.publicUrl)) - Number(Boolean(a.publicUrl)));
 
 const categoryLabels = {
   guideline: "大內科",

@@ -11,6 +11,17 @@ const notes = [
     localUrl: "../reading-radar/site/index.html",
   },
   {
+    title: "2026 第 1 型糖尿病臨床照護指引",
+    category: "endo",
+    accent: "cranberry",
+    status: "176 張指南投影片",
+    description:
+      "依 DAROC 2026 指引 17 章製作的詳細教學投影片：逐張附重點解說與原始頁碼，完整保留表格、圖與流程；密集表格分成上下兩張方便閱讀。",
+    tags: ["第 1 型糖尿病", "DAROC", "臨床指引", "投影片", "CGM"],
+    publicUrl: "https://daroc-t1d-guideline-2026.richtin.chatgpt.site/reader",
+    localUrl: "",
+  },
+  {
     title: "糖尿病患者骨質疏鬆照護共識",
     category: "endo",
     accent: "gold",

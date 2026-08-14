@@ -22,6 +22,17 @@ const notes = [
     localUrl: "",
   },
   {
+    title: "2026 甲狀腺風暴共同共識",
+    category: "endo",
+    accent: "teal",
+    status: "講者網站與計算器",
+    description:
+      "繁體中文 28 張臨床簡報與逐張講稿，整合 BWPS、JTA／JES TS1–TS2 計算器、講者／投影模式、手機遙控，以及 PDF 與可編輯 PPTX 下載。",
+    tags: ["甲狀腺風暴", "Thyroid Storm", "BWPS", "JTA／JES", "急重症"],
+    publicUrl: "https://thyroid-storm-2026-zh.richtin.chatgpt.site/",
+    localUrl: "",
+  },
+  {
     title: "糖尿病患者骨質疏鬆照護共識",
     category: "endo",
     accent: "gold",

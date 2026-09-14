@@ -3,10 +3,10 @@ const notes = [
     title: "腎臟與心血管風險計算器",
     category: "tools",
     accent: "sage",
-    status: "四合一臨床計算器",
+    status: "五合一臨床計算器",
     description:
-      "KFRE 腎衰竭風險、SCORE2／SCORE2-OP + CKD Add-on、SCORE2-Diabetes，全下拉選單操作，預設台灣常用單位（mg/dL、mg/g、HbA1c %），附 CKD-EPI 2021 eGFR 換算與 KDIGO／ESC 判讀門檻。",
-    tags: ["KFRE", "SCORE2", "CKD", "心血管風險", "計算器", "腎臟"],
+      "KFRE 腎衰竭風險、SCORE2／SCORE2-OP + CKD Add-on、SCORE2-Diabetes、SCORE2-Asia-Pacific（亞太校正，含台灣區域歸屬考據），全下拉選單操作，預設台灣常用單位（mg/dL、mg/g、HbA1c %），附 CKD-EPI 2021 eGFR 換算與 KDIGO／ESC 判讀門檻。",
+    tags: ["KFRE", "SCORE2", "SCORE2-Asia-Pacific", "CKD", "心血管風險", "計算器", "腎臟"],
     publicUrl: "https://tsn4830-ui.github.io/ckd-cvd-risk-calc/",
     localUrl: "",
     note: "附註：演算法已與 CKD-PC 與 kidneyfailurerisk.com 官方計算器逐項比對驗證；計算全在瀏覽器本機完成。",

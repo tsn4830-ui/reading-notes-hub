@@ -1,5 +1,18 @@
 const notes = [
   {
+    title: "腎臟與心血管風險計算器",
+    category: "tools",
+    accent: "sage",
+    status: "四合一臨床計算器",
+    description:
+      "KFRE 腎衰竭風險、SCORE2／SCORE2-OP + CKD Add-on、SCORE2-Diabetes，全下拉選單操作，預設台灣常用單位（mg/dL、mg/g、HbA1c %），附 CKD-EPI 2021 eGFR 換算與 KDIGO／ESC 判讀門檻。",
+    tags: ["KFRE", "SCORE2", "CKD", "心血管風險", "計算器", "腎臟"],
+    publicUrl: "https://tsn4830-ui.github.io/ckd-cvd-risk-calc/",
+    localUrl: "",
+    note: "附註：演算法已與 CKD-PC 與 kidneyfailurerisk.com 官方計算器逐項比對驗證；計算全在瀏覽器本機完成。",
+  },
+
+  {
     title: "阿婷醫師的讀書筆記",
     category: "tools",
     accent: "teal",
@@ -338,6 +351,18 @@ const notes = [
     localUrl: "",
   },
   {
+    title: "日本語ことはじめ",
+    category: "life",
+    accent: "cranberry",
+    status: "自學課程",
+    description:
+      "零基礎日語自學站：從三套文字、五十音（可點擊發音與測驗）、發音節奏，到 N5 文法十二課、62 句生存短句與主題單字；另附 JLPT N5・N4 備考頁，含考試結構、125 條文法清單、動詞變化練習器、185 個漢字與 81 題模擬試題。",
+    note: "附註：影片與資源連結逐一開啟驗證過並記錄訂閱數；發音用瀏覽器內建語音，進度只存自己的裝置。",
+    tags: ["日語", "五十音", "JLPT", "N5", "N4", "自學課程"],
+    publicUrl: "https://nihongo.drtsengshihting.com/",
+    localUrl: "",
+  },
+  {
     title: "阿婷醫師的訓練科學筆記",
     category: "training",
     accent: "sage",
@@ -346,6 +371,19 @@ const notes = [
       "訓練科學實證學習站：14 章主題、32 支精選影片、43 篇文獻，附學習紀錄與文獻雷達。非營利、不公開索引。",
     tags: ["訓練科學", "肌力訓練", "實證", "私訊索取"],
     privateId: "training-science-notes",
+    privateNote: "網站不公開連結，有需要的朋友請私訊阿婷醫師索取。",
+    publicUrl: "",
+    localUrl: "",
+  },
+  {
+    title: "阿婷醫師的整理收納筆記",
+    category: "life",
+    accent: "sage",
+    status: "實證學習站",
+    description:
+      "整理收納實證學習站：8 章從雜亂的代價、丟不掉的心理學一路談到囤積紅旗與求助時機，15 支驗證影片（附來源分級）、30 篇文獻全附 DOI、8 條反證，附學習紀錄。非營利、不公開索引。",
+    tags: ["整理收納", "斷捨離", "行為科學", "習慣", "實證", "私訊索取"],
+    privateId: "tidy-evidence-notes",
     privateNote: "網站不公開連結，有需要的朋友請私訊阿婷醫師索取。",
     publicUrl: "",
     localUrl: "",
@@ -361,6 +399,18 @@ const notes = [
     note: "附註：題目與標準答案逐字取自衛福部官方 PDF；解析由 AI 依實證來源整理、引用逐條驗證過，尚未逐題人工審閱。",
     publicUrl: "https://np.drtsengshihting.com/",
     localUrl: "../np-exam-prep/index.html",
+  },
+  {
+    title: "內科專科護理師甄審口試準備",
+    category: "tools",
+    accent: "cranberry",
+    status: "口試模擬演練",
+    description:
+      "依衛福部公告的甄審口試流程設計：門前 2 分鐘看主訴、進場 15 分鐘完成焦點式病史、焦點式健康評估、臨床推理與兩段解釋。17 個內科模擬案例＋8 項共通技能，每案附必問問題與紅旗、身體評估的「邊做邊說」句子、鑑別診斷表、對委員與對病人的逐字稿、常見扣分點；另有 15 分鐘計時演練、五面向自評表、話術腳本卡、口試當天行前清單（36 項，扣分規則逐條引自簡章）與跨裝置同步。",
+    tags: ["專科護理師", "甄審口試", "口試", "內科", "病史詢問", "身體評估", "計時演練", "OSCE"],
+    note: "附註：案例為本站自製模擬情境（衛福部不公告口試試題）；考試流程與規則逐條引自官方公告，臨床內容附指引／法規連結並逐條 API 驗證，另附 26 支已驗證的教學影片（華語 12 支）。",
+    publicUrl: "https://oral.drtsengshihting.com/",
+    localUrl: "../np-oral-prep/index.html",
   },
 ];
 

@@ -1,5 +1,18 @@
 const notes = [
   {
+    title: "糖・心・腎，從一開始（線上投影片＋手機遙控）",
+    category: "tools",
+    accent: "cranberry",
+    status: "113 張・可遙控放映",
+    description:
+      "2026/09/15 演講投影片的網頁版：公開瀏覽（縮圖總覽、鍵盤與滑動翻頁、全螢幕），另附講者放映頁與手機遙控器——筆電開放映頁顯示 QR code，手機掃了就能翻頁，並在手機上看講者備註、計時與跳頁搜尋。",
+    tags: ["投影片", "遙控放映", "SGLT2i", "dapagliflozin", "CKD", "ESC 2026", "演講"],
+    publicUrl: "https://tsn4830-ui.github.io/forxiga-slides/",
+    localUrl: "",
+    note: "附註：遙控不需自架後端，走公開 MQTT over WebSocket 雙通道；投影片圖檔會存進瀏覽器快取，會場斷網仍能放映。",
+  },
+
+  {
     title: "腎臟與心血管風險計算器",
     category: "tools",
     accent: "sage",

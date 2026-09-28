@@ -14,7 +14,7 @@ const notes = [
 
   {
     title: "腎臟與心血管風險計算器",
-    category: "tools",
+    category: "cardio",
     accent: "sage",
     status: "五合一臨床計算器",
     description:
@@ -398,6 +398,20 @@ const notes = [
     tags: ["整理收納", "斷捨離", "行為科學", "習慣", "實證", "私訊索取"],
     privateId: "tidy-evidence-notes",
     privateNote: "網站不公開連結，有需要的朋友請私訊阿婷醫師索取。",
+    publicUrl: "",
+    localUrl: "",
+  },
+  {
+    title: "秋春阿嬤作品集",
+    category: "life",
+    accent: "gold",
+    status: "翻頁作品集",
+    description:
+      "秋春阿嬤的十一件畫作與拼貼創作，像翻書一樣一頁一頁欣賞：每一幅畫都配上一首專屬的輕音樂，翻到哪一頁就播哪一首，手機與電腦都能看。",
+    note: "附註：十一首配樂皆為本作品集原創合成，未使用任何他人的音樂素材。",
+    tags: ["作品集", "畫作", "翻頁", "配樂", "家人", "私訊索取"],
+    privateId: "qiuchun-art-portfolio",
+    privateNote: "網站不公開索引，想看的朋友請私訊阿婷醫師索取連結。",
     publicUrl: "",
     localUrl: "",
   },

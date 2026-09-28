@@ -1,0 +1,4 @@
+# Cloudflare Pages 單檔上限 25 MiB，這兩份投影片各 94 MB / 54 MB，
+# 上傳會讓整個 deploy 直接失敗。網站也沒有任何地方連到它們
+# （DAROC 卡片指向外部 reader），所以排除不上傳，檔案仍留在 repo。
+downloads/

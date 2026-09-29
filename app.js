@@ -1,5 +1,18 @@
 const notes = [
   {
+    title: "動畫工作室（程式動畫畫風選擇）",
+    category: "tools",
+    accent: "gold",
+    status: "43 種畫風・可看示範片",
+    description:
+      "用程式逐格算繪的動畫短片點單頁：依情境（衛教、教學、數據、故事、節慶…）篩選 43 種畫風、直接播放示範片，填好主題、觀眾、長度、旁白與必講重點後，產生可以貼給 Claude Code 的製作指令。畫面、旁白、配樂、字幕都由程式完成，不使用影片生成模型。",
+    tags: ["動畫", "衛教影片", "畫風", "白板講解", "Claude Code", "Lemo-Opuscar", "影片製作"],
+    publicUrl: "https://animation-studio-8cv.pages.dev/",
+    localUrl: "",
+    note: "附註：畫風與示範片來自 LemoLab 開源的 Lemo-Opuscar（CC BY 4.0）；繁體中文名稱與醫療情境建議為本站整理。本頁只負責點單，影片在自己電腦上製作。",
+  },
+
+  {
     title: "糖・心・腎，從一開始（線上投影片＋手機遙控）",
     category: "tools",
     accent: "cranberry",

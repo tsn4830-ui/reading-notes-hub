@@ -39,6 +39,18 @@ const notes = [
   },
 
   {
+    title: "好站收藏",
+    category: "tools",
+    accent: "cranberry",
+    status: "外部連結蒐集",
+    description:
+      "蒐集別人做的好網站：醫學會議資源、超音波課程、研究工具庫等，可搜尋可分類，每一筆都標明原作者與來源。",
+    note: "附註：裡面全部不是我做的網站，只是連結蒐集。",
+    tags: ["好站", "外部資源", "連結蒐集"],
+    publicUrl: "https://good-sites-collection.tsn4830.workers.dev/",
+    localUrl: "",
+  },
+  {
     title: "阿婷醫師的讀書筆記",
     category: "tools",
     accent: "teal",

@@ -264,6 +264,17 @@ const notes = [
     localUrl: "",
   },
   {
+    title: "低血糖急救任務",
+    category: "edu",
+    accent: "cranberry",
+    status: "衛教小遊戲",
+    description:
+      "給糖尿病病友的手機小遊戲：問答版 9 關，加上跑來跑去拿糖的動作版，三分鐘學會「吃 15 克糖、等 15 分鐘再測」。",
+    tags: ["糖尿病", "低血糖", "衛教", "遊戲", "民眾"],
+    publicUrl: "https://game.drtsengshihting.com/",
+    localUrl: "",
+  },
+  {
     title: "減重實證課",
     category: "edu",
     accent: "cranberry",

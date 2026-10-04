@@ -141,6 +141,18 @@ const notes = [
     localUrl: "../antiplatelet-therapy-2026-pages/index.html",
   },
   {
+    title: "2026 ADA/EASD 第二型糖尿病共識",
+    category: "endo",
+    accent: "blue",
+    status: "共識筆記",
+    description:
+      "2026 ADA/EASD 第二型糖尿病管理共識（Diabetologia）的繁體中文整理：講者版投影片、詳細閱讀筆記，以及原文圖表索引與 PDF 連結。",
+    note: "附註：中文屬教育性整理，推薦語氣與適用條件請對照原文確認。",
+    tags: ["糖尿病", "ADA", "EASD", "共識", "投影片"],
+    publicUrl: "https://tsn4830-ui.github.io/ada-easd-2026/",
+    localUrl: "",
+  },
+  {
     title: "2026 CKM Syndrome Guideline",
     category: "cardio",
     accent: "teal",

@@ -51,6 +51,19 @@ const notes = [
   },
 
   {
+    title: "台灣健康圖譜・代謝共病態勢儀",
+    category: "cardio",
+    accent: "sage",
+    status: "互動地圖與臨床教學",
+    description:
+      "點選台灣 22 縣市，探索糖尿病、腎臟死因分類、心臟疾病與腦血管疾病的 2023–2025 年官方死因統計；可比較兩個縣市、播放年度變化，並匯出附來源的資料圖卡。另有病人器官風險地圖、病程回放與心腎代謝共病機轉教學。",
+    note: "附註：地圖呈現死亡統計，不是盛行率或發生率；未公布數值不補零。個案資料只留在當次瀏覽器分頁，工具供臨床教學使用。",
+    tags: ["台灣地圖", "流行病學", "糖尿病", "腎臟病", "心血管疾病", "心腎代謝", "縣市比較", "資料圖卡"],
+    publicUrl: "https://radar.drtsengshihting.com/console/#taiwanEpi",
+    localUrl: "",
+  },
+
+  {
     title: "好站收藏",
     category: "tools",
     accent: "cranberry",

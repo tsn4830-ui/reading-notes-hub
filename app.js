@@ -1,5 +1,15 @@
 const notes = [
   {
+    title: "更年期與 MHT：Science 2026 讀書筆記",
+    category: "endo",
+    accent: "cranberry",
+    status: "文獻與臨床處方筆記",
+    description: "Science Review 的八個核心觀點、經皮 estradiol 與 micronized progesterone 處方框架、GSM／VMS 決策流程，以及本文觀點與臨床指引的證據界線。",
+    tags: ["更年期", "MHT", "Science", "荷爾蒙治療", "VMS", "GSM"],
+    publicUrl: "https://tsn4830-ui.github.io/reading-notes-hub/articles/menopause-mht-2026/",
+    localUrl: "articles/menopause-mht-2026/index.html",
+  },
+  {
     title: "居家徒手 20 動作（動畫圖解＋課表闖關）",
     category: "training",
     accent: "sage",

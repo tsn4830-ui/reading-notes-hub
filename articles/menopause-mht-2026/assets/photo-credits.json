@@ -1,0 +1,19 @@
+{
+  "checked": "2026-10-10",
+  "photos": [
+    {
+      "file": "avenue-pixabay.jpg",
+      "author": "bertvthul",
+      "source": "https://pixabay.com/photos/avenue-trees-path-sunbeams-sunrays-815297/",
+      "license": "https://pixabay.com/service/license-summary/",
+      "use": "article hero and slide cover"
+    },
+    {
+      "file": "forest-pexels.jpg",
+      "author": "Yunus Tuğ",
+      "source": "https://www.pexels.com/photo/sunlight-in-green-forest-17181272/",
+      "license": "https://www.pexels.com/license/",
+      "use": "closing slide"
+    }
+  ]
+}

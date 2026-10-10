@@ -4,7 +4,7 @@ const jump = document.querySelector('#jump');
 const list = document.querySelector('#slide-list');
 slideData.forEach((s,i)=>{const option=document.createElement('option');option.value=i;option.textContent=`${i+1} · ${s.title}`;jump.append(option);const btn=document.createElement('button');btn.textContent=option.textContent;btn.type='button';btn.addEventListener('click',()=>{go(i);toggleList(false)});list.append(btn)});
 function markup(s,i){
- const head=`<p class="label">${s.label}</p><h1>${s.title}</h1>`;
+ const head=`<div class="slide-heading"><p class="label">${s.label}</p><span class="slide-index">${String(i+1).padStart(2,"0")} <em>/ ${slideData.length}</em></span></div><h1>${s.title}</h1>`;
  let body='';
  if(s.mode==='complete')body=`<div class="complete-figure"><button class="image-button" data-zoom="assets/${s.image}.png" aria-label="放大完整原圖"><img src="assets/${s.image}.png" alt="${s.title}，含全部分圖與完整圖說"></button><p class="complete-caption">完整原圖與圖說 · 點圖放大 · 下一張分區解讀</p></div>`;
  else if(s.mode==='detail')body=`<div class="detail-layout"><div class="detail-visual"><button class="image-button" data-zoom="assets/${s.image}.png" aria-label="放大此分區"><img src="assets/${s.image}.png" alt="${s.title}原圖裁切放大"></button><div class="locator"><span>原圖位置</span><div class="locator-image"><img src="assets/${s.parent}.png" alt="分區在原圖的位置"><span class="region" style="left:${s.region[0]}%;top:${s.region[1]}%;width:${s.region[2]}%;height:${s.region[3]}%"></span></div><button class="text-button" data-zoom="assets/${s.parent}.png">查看完整原圖 ↗</button></div></div><div class="body">${s.body}</div></div>`;
@@ -12,7 +12,7 @@ function markup(s,i){
  else body=`<div class="body">${s.body}</div>`;
  return `<article class="slide ${s.mode||'text'}" aria-label="第 ${i+1} 張">${head}${body}<p class="source">${s.source}</p></article>`
 }
-function go(i,update=true){current=Math.max(0,Math.min(slideData.length-1,i));stage.innerHTML=markup(slideData[current],current);jump.value=current;document.querySelector('#counter').textContent=`${current+1} / ${slideData.length}`;document.querySelector('#prev').disabled=current===0;document.querySelector('#next').disabled=current===slideData.length-1;if(update)history.replaceState(null,'',`#slide-${current+1}`);window.scrollTo(0,0)}
+function go(i,update=true){current=Math.max(0,Math.min(slideData.length-1,i));stage.innerHTML=markup(slideData[current],current);jump.value=current;document.querySelector(".slide-progress span").style.width=`${100*(current+1)/slideData.length}%`;document.querySelector('#counter').textContent=`${current+1} / ${slideData.length}`;document.querySelector('#prev').disabled=current===0;document.querySelector('#next').disabled=current===slideData.length-1;if(update)history.replaceState(null,'',`#slide-${current+1}`);window.scrollTo(0,0)}
 function readHash(){const n=Number(location.hash.replace('#slide-',''));go(Number.isInteger(n)&&n>0?n-1:0,false)}
 function toggleList(open){list.hidden=!open;document.querySelector('#overview').setAttribute('aria-expanded',String(open))}
 async function fullscreen(){try{if(document.fullscreenElement)await document.exitFullscreen();else if(document.body.requestFullscreen)await document.body.requestFullscreen()}catch(e){document.querySelector('.hint').textContent='此瀏覽器未允許全螢幕；仍可直接翻頁閱讀。'}}

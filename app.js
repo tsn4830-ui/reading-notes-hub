@@ -1,5 +1,16 @@
 const notes = [
   {
+    title: "內分泌訓練島（新陳代謝科專科訓練 3D 地圖遊戲）",
+    category: "endoteach",
+    accent: "sage",
+    status: "開放遊戲・可註冊帳號",
+    description:
+      "把新陳代謝科專科醫師兩年訓練做成一座黏土模型風的 3D 六角島城市：12 個訓練站、61 棟里程碑建物，每棟掛上官方學習護照 99 項（56 項必修）、Y1／Y2 可信任等級、對應學會指引與評量方式；島與島之間的小人是會診動線，一天六個訓練時段輪流亮起。註冊帳號後可逐棟打卡，建物會染綠、稱號升級、看排行榜。內容依學會《訓練綱要》與《甄審辦法》整理。",
+    tags: ["內分泌", "新陳代謝科", "專科訓練", "學習護照", "CBME", "EPA", "3D", "遊戲", "Fellow"],
+    publicUrl: "https://island.drtsengshihting.com/",
+    localUrl: "",
+  },
+  {
     title: "更年期與 MHT：Science 2026 讀書筆記",
     category: "endo",
     accent: "cranberry",

@@ -438,12 +438,12 @@ const notes = [
     accent: "gold",
     status: "實證教材",
     description:
-      "給內科／新陳代謝科住院醫師的 14 章內分泌實證教材：45 支已驗證影片、79 篇附 DOI 文獻，每章含臨床轉譯、常見誤區與反證，附學習紀錄同步。",
-    note: "附註：根據實證醫學指引與文獻整理，並搭配網路影片。",
+      "給內科／新陳代謝科住院醫師的 15 章內分泌實證教材：47 支已驗證影片、96 篇附 DOI 文獻，每章含臨床轉譯、常見誤區與反證，附跨裝置的學習紀錄同步。",
+    note: "附註：根據實證醫學指引與文獻整理，並搭配網路影片。非醫療建議。",
     tags: ["內分泌", "住院醫師", "實證教材"],
-    privateNote: "此站不公開索引，開啟後需輸入密碼。",
-    privateUrl: "https://endoclass.drtsengshihting.com/",
-    publicUrl: "",
+    privateNote: "",
+    privateUrl: "",
+    publicUrl: "https://endoclass.drtsengshihting.com/",
     localUrl: "",
   },
   {

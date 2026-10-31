@@ -333,6 +333,19 @@ const notes = [
     localUrl: "",
   },
   {
+    title: "老年人的肥胖藥物：Geriatrics 5Ms 安全處方架構",
+    category: "endo",
+    accent: "teal",
+    status: "教學簡報＋講解影片",
+    description:
+      "導讀 JAGS 2026 特別文章：腸泌素類減重藥在老年人的瘦體組織流失、衰弱與脫水風險，用老年醫學 5Ms（Mind／Mobility／Medications／Multicomplexity／Matters Most）做安全處方；36 頁單檔簡報，保留原文英文圖表（可放大），附台灣口音繁體中文講解影片。",
+    tags: ["老年醫學", "GLP-1", "腸泌素", "肌少症", "衰弱", "5Ms", "原文圖表", "講解影片"],
+    privateId: "obesity-older-adults-5ms",
+    privateNote: "原文圖表有版權，僅供私人教學使用，私訊索取。",
+    publicUrl: "",
+    localUrl: "../../Dropbox/離線閱讀/老年人的肥胖藥物-5Ms-簡報_離線單檔.html",
+  },
+  {
     title: "糖尿病衛教小遊戲",
     category: "edu",
     accent: "cranberry",

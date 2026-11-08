@@ -108,6 +108,18 @@ const notes = [
     localUrl: "../reading-radar/site/index.html",
   },
   {
+    title: "2026 臺灣糖尿病注射藥物注射指引",
+    category: "endo",
+    accent: "teal",
+    status: "20 張教學簡報＋講稿",
+    description:
+      "整理胰島素與腸泌素注射照護：針頭選擇、部位輪替、脂肪增生、筆針操作、保存與針具安全。提供大字可編輯 PowerPoint、逐頁備註及完整講稿，長表分頁，並保留原文不一致處的閱讀提醒。",
+    tags: ["糖尿病", "注射技巧", "胰島素", "腸泌素", "衛教", "投影片"],
+    publicUrl: "https://tsn4830-ui.github.io/diabetes-injection-guide-2026/",
+    localUrl: "",
+    note: "附註：依糖尿病衛教學會 2026 指引摘要改寫，標示來源頁碼，不提供原書或原圖下載。簡報附學會官網與教學網站 QR code。",
+  },
+  {
     title: "2026 第 1 型糖尿病臨床照護指引",
     category: "endo",
     accent: "cranberry",

@@ -108,6 +108,17 @@ const notes = [
     localUrl: "../reading-radar/site/index.html",
   },
   {
+    title: "胰島素注射衛教核對工具",
+    category: "endo",
+    accent: "teal",
+    status: "15 項互動檢核與 PDF 匯出",
+    description:
+      "依 2026 注射指引第 72 頁整理，方便衛教師核對注射操作、部位輪替、皮膚狀況及保存。可下載本次紀錄與空白表單 PDF，並以紀錄檔換電腦接續填寫。",
+    tags: ["糖尿病", "胰島素", "衛教", "核對表", "PDF"],
+    publicUrl: "https://tsn4830-ui.github.io/insulin-education-checklist/",
+    localUrl: "",
+  },
+  {
     title: "2026 臺灣糖尿病注射藥物注射指引",
     category: "endo",
     accent: "teal",

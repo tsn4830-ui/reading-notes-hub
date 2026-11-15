@@ -337,10 +337,10 @@ const notes = [
     title: "阿婷醫師的控糖小撇步",
     category: "edu",
     accent: "gold",
-    status: "衛教音檔",
+    status: "每週 LINE 衛教音檔",
     description:
-      "以短音檔形式講糖尿病日常控糖重點的收聽目錄，適合傳給病友在通勤或做家事時聽。",
-    tags: ["糖尿病", "衛教音檔", "LINE"],
+      "每週更新的糖尿病衛教收聽目錄，圖卡與短音檔可快轉、調語速，也可轉傳給家人；2026-11-15 新增『看得清楚，也要看眼底』，提醒糖友別等視力變差才安排眼底檢查。",
+    tags: ["糖尿病", "衛教音檔", "LINE", "眼底檢查", "糖尿病視網膜病變"],
     publicUrl: "https://tsn4830-ui.github.io/dm-line-edu-media/",
     localUrl: "",
   },

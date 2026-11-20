@@ -1,5 +1,15 @@
 const notes = [
   {
+    title: "糖尿病治療更新｜華盛頓內科治療手冊第 37、38 版與 ADA 2026 對照",
+    category: "endo",
+    accent: "sage",
+    status: "教科書與指引對照",
+    description: "逐項比較兩版手冊的第 23 章與 ADA 2026 指引，可按主題查閱血糖、血壓與血脂目標、住院血糖管理，以及 DKA、HHS 等急症。",
+    tags: ["糖尿病", "Washington Manual", "ADA 2026", "住院血糖", "DKA", "HHS"],
+    publicUrl: "https://tsn4830-ui.github.io/dm-update-2026/",
+    localUrl: "",
+  },
+  {
     title: "內分泌訓練島（新陳代謝科專科訓練 3D 地圖遊戲）",
     category: "endoteach",
     accent: "sage",

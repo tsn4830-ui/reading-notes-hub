@@ -1,5 +1,17 @@
 const notes = [
   {
+    title: "Beyond A1c：CKM 病例中的門診選藥決策",
+    category: "cardio",
+    accent: "sage",
+    status: "演講簡報・需授權登入",
+    description:
+      "2026/11/25 曾士婷醫師 Jardiance 演講：整合光田院區收案資料、三個臨床案例與 SGLT2i 心腎保護研究，附線上投影片、手機遙控與逐字稿。",
+    tags: ["Jardiance", "empagliflozin", "SGLT2i", "CKM", "心腎代謝", "演講", "2026/11/25"],
+    publicUrl: "https://jardiance-ckm-20261125.richtin.chatgpt.site",
+    localUrl: "",
+    note: "附註：演講網站目前僅限原建立者帳號登入瀏覽；此入口保留原有存取權限。",
+  },
+  {
     title: "糖尿病治療更新｜華盛頓內科治療手冊第 37、38 版與 ADA 2026 對照",
     category: "endo",
     accent: "sage",
